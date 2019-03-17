@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/SignUp.css">
+</head>
+<body>
+	<div class="frm">
+		<form>
+			<h1 class="display-4" style="font-weight: bolder; text-align: center; margin-bottom: 30px;"> Sign up</h1>
+					<div class="form-row">	
+						<div class="col">
+							<label>First Name</label>
+								<input type="text" name="f_name" id="first_name" placeholder="eg: Mark" class="form-control"  required>
+						</div>
+						<div class="col">	
+							<label>Last Name</label>
+								<input type="text" name="l_name" id="last_name" placeholder="eg: voloz" class="form-control" required>
+						</div>
+					</div>
+			<div class="column">
+				<label>email</label>
+				<input type="email" name="email" id="email_id" placeholder="eg: markvoloz@gmail.com" class="form-control" required>
+				<label>Password</label>
+				<input type="password" name="password" id="pass_word" placeholder="Password" class="form-control" required>
+				<label>New Password</label>
+				<input type="password" name="password" id="confirm_pass_word"placeholder="Confirm password" class="form-control" required>
+				
+			</div>
+		</form>
+		<button type="button" onclick="signUpSubmit(first_name,last_name,email_id,pass_word,confirm_pass_word)" class="btn btn-success btn-block">Register</button>
+	</div>
+	<script type="text/javascript" src="../jquery/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../scripts/index.js"></script>
+</body>
+</html>

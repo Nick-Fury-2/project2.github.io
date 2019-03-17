@@ -1,0 +1,73 @@
+html{
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	font-family: 'Quicksand' , sans-serif !important;
+	background-color: #EAEDF3;
+	height: 100%; 	
+}
+.logo1{
+	border-radius: 23px;
+}
+a{
+	text-decoration: none!important;
+}
+.frm{
+	background:#F4F6F9;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+	padding: 40px;	
+	height: 70%;
+	width: 500px;
+	position: relative;
+	top: 100px;
+	margin:auto;  
+}
+img{
+	text-align: center!important;
+margin: auto;	
+}
+.form-control{
+	color:#302D43!important;
+	border-radius: 3px;
+	background-color: rgba(0,0,0,0);
+}
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #92CF48;
+  outline: 0!important;
+  box-shadow: none!important;
+}
+label{
+	display: inline-block;
+	margin-bottom: 0px!important;
+	margin-left: 5px;
+	font-weight: bolder;
+}
+input,.btn{
+	margin-bottom: 20px;
+}
+
+@media(max-width: 1300px){
+	.frm{
+		width: 500px;
+	}
+}
+@media(max-width: 501px){
+	.frm{
+		width: 400px;
+	}
+}
+@media(max-width:200px){
+	.frm{
+		width: 400px;
+	}
+}
+/*
+purpleLight #302D43
+DarkPurple #282639
+neonGreen #92CF48
+lightGrey #F4F6F9
+DarkGrey  #EAEDF3
+*/

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+    
+</head>
+<body>
+	<section id="menu" onmouseenter="xpand()" onmouseleave="collaps()">
+		<nav id="menu1">
+			<a href="#" class="active">
+					 	<i class="fa fa-tachometer" aria-hidden="true"></i>
+					<span class="txt">Dashboard</span>
+			</a>
+
+				<a href="#" class="active">
+					<i class="fa fa-home" aria-hidden="true"></i>
+					<span class="txt">Home</span>
+				</a>
+
+				<a href="#" class="active">
+					<i class="fa fa-tasks" aria-hidden="true"></i>
+					<span class="txt">Projects</span>
+				</a>
+				
+				<a href="#" class="active">
+					<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+					<span class="txt">Completed</span>
+				</a>
+
+				<a href="#" class="active">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<span class="txt">Profile</span>
+				</a>
+
+				<a href="#" class="active">
+					<i class="fa fa-sign-out" aria-hidden="true"></i>
+					<span class="txt">Logout</span>
+				</a>
+		</nav>
+	</section>
+	
+	<header>
+		<div class="search-area">
+				<label style="display: none;">Search Area</label>	
+					<section class="input-group">
+        				<section class="input-group-prepend">
+								<section class="input-group-text">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</section>
+                            <input type="text" name="String" placeholder="Search" class="form-control" style="width: 450px;border-top-left-radius: 0;border-bottom-left-radius: 0;border-left: 0;outline: none 0;">
+						</section>
+					</section>
+
+		</div>
+			
+
+		<div class="user-area">
+			<a href="#" style="color:#92CF48"><button type="button" class="btn btn-outline-success btn-md" style="outline: 0; box-shadow:none;" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fa fa-plus-circle" aria-hidden="true" id="add_icn"></i>Add Project</button></a>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">New Project</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">TITLE</label>
+                                    <input type="text" id="title" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Description</label>
+                                    <textarea class="form-control" id="description"> </textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-success" onclick="addTask()" data-dismiss="modal">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="notification">
+				<i class='fa fa-bell-o faa-ring animated fa-4x'></i>
+				<span class="circle">3</span>
+			</a> 
+
+			<a href="#">
+				<div class="user-img">	</div>
+					<i class="fa fa-caret-down" aria-hidden="true" id="caret-down"></i>
+			</a>
+		</div>
+	</header>
+    <div id="addedCards" class="container"style="height: 200px; width: 1200px; margin-top:60px; margin-left:300px">
+
+    </div>
+    <script type="text/javascript" src="../jquery/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../scripts/home.js"></script>
+</body>
+</html>
