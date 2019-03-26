@@ -14,10 +14,9 @@ a{
 	text-decoration: none!important;
 }
 .frm{
-	background:#F4F6F9;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+	border:1px solid gray;
 	padding: 40px;	
-	height: 70%;
+	height: auto;
 	width: 500px;
 	position: relative;
 	top: 100px;
@@ -25,7 +24,7 @@ a{
 }
 img{
 	text-align: center!important;
-margin: auto;	
+    margin: auto;
 }
 .form-control{
 	color:#302D43!important;
@@ -41,14 +40,17 @@ margin: auto;
 }
 label{
 	display: inline-block;
-	margin-bottom: 0px!important;
+	margin-bottom: 0 !important;
 	margin-left: 5px;
 	font-weight: bolder;
 }
 input,.btn{
 	margin-bottom: 20px;
 }
-
+#success_btn{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
 @media(max-width: 1300px){
 	.frm{
 		width: 500px;

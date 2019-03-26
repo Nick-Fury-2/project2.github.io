@@ -3,6 +3,11 @@ function xpand() {
     setTimeout(myFunction, 200);
 }
 
+function myFunction(){
+    for(var i=0;i<6;i++){
+        document.getElementsByClassName('txt')[i].style.display = 'inline';
+    }
+}
 function collaps(){
     for(var i=0;i<6;i++){
         document.getElementsByClassName('txt')[i].style.display = 'none';
@@ -10,11 +15,7 @@ function collaps(){
     document.getElementById('menu').style.width= '90px';
 }
 
-function myFunction(){
-    for(var i=0;i<6;i++){
-        document.getElementsByClassName('txt')[i].style.display = 'inline';
-    }
-}
+
 function addTask(){
     const t = document.getElementById('title').value;
     const d = document.getElementById('description').value;
